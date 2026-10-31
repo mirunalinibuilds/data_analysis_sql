@@ -12,21 +12,6 @@ The analysis is executed against a comprehensive relational sales model represen
 * **Product Catalog:** 295 distinct inventory units across multiple categories
 * **Gross Volume:** Over ₹29.4 Million (approx. 29.4M) in total consolidated sales
 
-## 📁 Repository Structure
-
-scripts/
-├── 01_init_database.sql           # Database creation, schema initialization, and table definitions
-├── 02_bulk_load_data.sql          # Truncate commands and BULK INSERT operations for raw CSV ingestion
-├── 03_database_exploration.sql    # Metadata evaluation using INFORMATION_SCHEMA filters
-├── 04_dimensions_exploration.sql  # Distinct value exploration across dimensional vectors
-├── 05_date_range_exploration.sql  # Temporal boundary identification and outlier/age tracking
-├── 06_measures_exploration.sql    # Global aggregate health check reports and metric unions
-├── 07_magnitude_analysis.sql      # Group-by dimensional matrices and cross-category revenue calculations
-├── 08_ranking_analysis.sql        # Top-performing cohort identification and density-rank metrics
-├── 09_change_over_time.sql        # Time-series analysis, temporal distributions, and date truncations
-├── 10_cumulative_analysis.sql      # Running totals, partitions by year, and moving average layers
-└── 11_performance_analysis.sql     # Multi-tier CTEs for Year-over-Year (YoY) variance computation
-
 ## 🛠️ Advanced Analytics Architecture
 
 The analytical suite leverages performance-focused T-SQL workflows to extract deep business metrics:
